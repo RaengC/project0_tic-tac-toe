@@ -1,0 +1,30 @@
+* {border: 1px solid green;}
+
+body {
+  background-color: #dfc1be;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #84edea;
+  text-align: center;
+}
+
+.inline-block {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 100px;
+  display: inline-block;
+}
+
+.horizontal {
+
+}
+
+footer {
+  text-align: right;
+}
