@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-.inline-block {
+.box  {
   background-color: white;
   width: 100px;
   height: 100px;
