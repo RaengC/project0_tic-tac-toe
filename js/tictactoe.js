@@ -19,9 +19,6 @@ const displayClick = function () {
 // finds all elements in row
 const row = document.getElementsByTagName('tr');
 // console.log(row);
-const box = document.getElementsByTagName('td');
-// console.log(box); // this is in an array
-
 
 // Calculate winner horizontal
 const horizontalWin = function () {
@@ -61,3 +58,19 @@ const verticalWin = function () {
       return false;
     };
   };
+
+const box = document.getElementsByTagName('td');
+
+const diagonalWin = function () {
+  if (box[0].innerText === 'X' && box[4].innerText === 'X' && box[8].innerText === 'X') {
+    return 'The Winner is X';
+  } else if (box[0].innerText === 'O' && box[4].innerText === 'O' && box[8].innerText === 'O') {
+    return 'The Winner is O';
+  } else if (box[2].innerText === 'O' && box[4].innerText === 'O' && box[6].innerText === 'O') {
+    return 'The Winner is O';
+  } else if (box[2].innerText === 'X' && box[4].innerText === 'X' && box[6].innerText === 'X')  {
+    return 'The Winner is X';
+  } else {
+    return false
+  };
+};
