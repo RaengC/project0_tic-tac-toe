@@ -16,9 +16,12 @@
 <div class="container">
   <h1>Tic-Tac-Toe</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere ornare arcu ac ullamcorper. Etiam vitae urna tincidunt libero vehicula condimentum. Nullam pretium dignissim arcu nec tristique. Morbi eget arcu ut felis rutrum vehicula vitae quis nulla. Donec tempus ullamcorper purus. Duis vel ornare tortor. Nullam at ornare magna.</p>
-<h2><span id="winner">Start Game</span></h2>
+
+  <h2><span id="winner">Start Game</span></h2>
+
   <main>
-    <table>
+    <table
+    <tbody>
       <tr>
         <td class="box 1" id="line-one-1"></td>
         <td class="box 2" id="line-one-2"></td>
@@ -33,17 +36,25 @@
         <td class="box 1" id="line-three-1"></td>
         <td class="box 2" id="line-three-2"></td>
         <td class="box 3" id="line-three-3"></td>
-      </tr>
+      </tr
+      </tbody>
     </table>
-
-    <button id="clearBtn" value="Reset Game">Reset Game</button>
   </main>
-  <div class="">
 
+  <div>
+    <div class="totals">
+      <h4>Total X : <span id="winsX"></span></h4>
+    </div>
+    <div class="totals">
+      <h4>Total O : <span id="winsO"></span></h4>
+    </div>
   </div>
-  <footer>Copyright 2020 Raeng Castagna</footer>
-</div>
 
+  <button id="clearBtn" value="Reset Game">Reset Game</button>
+
+  <footer>Copyright 2020 Raeng Castagna</footer>
+
+</div>
 
 </body>
 </html>
