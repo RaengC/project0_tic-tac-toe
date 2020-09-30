@@ -14,6 +14,22 @@ const displayClick = function () {
       $(selectedId).text('O')
       firstPlayer = 1
     };
+
+  let horizontal = horizontalWin();
+  let vertical = verticalWin();
+  let diagonal = diagonalWin();
+
+  // check for winner
+  if (horizontal) {
+    console.log('winner');
+    return $('#winner').text(horizontalWin());
+  } else if (vertical) {
+    return $('#winner').text(verticalWin());
+  } else if (diagonal) {
+    return $('#winner').text(diagonalWin());
+  } else {
+  console.log('keep going');
+  };
 };
 
 // finds all elements in row
