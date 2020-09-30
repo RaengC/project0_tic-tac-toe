@@ -5,6 +5,6 @@ $(document).ready(function () {
 
     $("#clearBtn").on('click', () => {
         $('.box').empty();
-        $('#winner').empty();
+        $('#winner').empty().text('Start Game');
     })
 });
