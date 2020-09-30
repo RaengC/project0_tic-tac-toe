@@ -1,13 +1,16 @@
 let firstPlayer = 1;
 let winsX = 1;
-let winsO = 0;
+let winsO = 1;
 const winnerX = 'The Winner is X';
 const winnerO = 'The Winner is O';
 const row = document.getElementsByTagName('tr'); // for horizontalWin
 const box = document.getElementsByTagName('td'); // for diagonalWin
 const firstVertical = document.getElementsByClassName("1"); // for verticalWin
+console.log(firstVertical)
 const secondVertical = document.getElementsByClassName('2'); // for verticalWin
+console.log(secondVertical)
 const thirdVertical = document.getElementsByClassName('3'); // for verticalWin
+console.log(thirdVertical)
 
 const displayClick = function () {
   const clickedBox = this.getAttribute("id"); // finds id
