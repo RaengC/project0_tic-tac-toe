@@ -8,10 +8,10 @@ Class project to create tic-tac-toe game with JavaScript, html and css. Requirem
 
 #### Key Stories
 * Two player functionality
+* Multiple Game Rounds
+* Customisation of board (ie X, O, name, picture etc)
 
 #### Future Stories
-* Multiple Game Rounds
-* Customisation of tokens (ie X, O, name, picture etc)
 * Local storage capacity
 * Custom board sizes
 * AI capacity
