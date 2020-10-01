@@ -28,24 +28,24 @@ const displayClick = function () {
   if (horizontal) {
     $('#winner').text(horizontalWin());
     if (horizontal === winnerX) {
-      $('#winsX').text(winsX++)
+      $('#winsX').text(winsX++);
     } else {
-      $('#winsO').text(winsO++)
-    }
+      $('#winsO').text(winsO++);
+    };
   } else if (vertical) {
     $('#winner').text(verticalWin());
     if (vertical === winnerX) {
-      $('#winsX').text(winsX++)
+      $('#winsX').text(winsX++);
     } else {
-      $('#winsO').text(winsO++)
-    }
+      $('#winsO').text(winsO++);
+    };
   } else if (diagonal) {
     $('#winner').text(diagonalWin());
     if (diagonal === winnerX) {
-      $('#winsX').text(winsX++)
+      $('#winsX').text(winsX++);
     } else {
-      $('#winsO').text(winsO++)
-    }
+      $('#winsO').text(winsO++);
+    };
   } else {
   };
 };

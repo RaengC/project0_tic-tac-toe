@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rock+Salt&display=swap');
 
-/* * {border: 1px solid green;} */
-
 body {
   background-color: #dfc1be;
 }
@@ -26,6 +24,7 @@ h1 {
 a {
   text-decoration: none;
 }
+
 h4 {
   margin: 14px 2em 0;
 }
@@ -51,6 +50,7 @@ tbody {
 td {
   font-size: 3em;
 }
+
 .box  {
   background-color: white;
   width: 100px;
