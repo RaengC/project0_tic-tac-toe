@@ -80,8 +80,6 @@ const verticalWin = function () {
     };
   };
 
-
-
 const diagonalWin = function () {
   if (box[0].innerText === 'X' && box[4].innerText === 'X' && box[8].innerText === 'X') {
     return winnerX;
