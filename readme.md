@@ -5,6 +5,8 @@ Class project to create tic-tac-toe game with JavaScript, html and css. Requirem
 
 Two boards created with exploration of css capacity being main goal of second board.
 
+[Click here for Live Game Link](https://raengc.github.io/project0_tic-tac-toe/)
+
 ## User Stories with associated Technical Tasks
 [Trello Board, with associated **To Do, Doing, Done** list.](https://trello.com/invite/b/dst9Evfb/13b928acd6e07d32bcd7fadc82953e02/project0tic-tac-toe)
 
