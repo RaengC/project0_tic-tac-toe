@@ -1,10 +1,14 @@
 
 $(document).ready(function () {
 
-    $('.box').on('click', displayClick);
+  // Call displayClick function when box clicked in game
+  $('.box').on('click', displayClick);
 
-    $("#clearBtn").on('click', () => {
-        $('.box').empty();
-        $('#winner').empty().text('Start Game');
-    });
+  // Activate Reset Button
+  // Clears board of all values
+  // Resets winning message to empty then adds orginal message back
+  $("#clearBtn").on('click', () => {
+    $('.box').empty();
+    $('#winner').empty().text('Start Game');
+  });
 });

@@ -3,16 +3,17 @@ let winsX = 1;
 let winsO = 1;
 const winnerX = 'The Winner is X';
 const winnerO = 'The Winner is O';
-const drawMsg = 'Draw - play again!'
 const row = document.getElementsByTagName('tr'); // for horizontalWin
 const box = document.getElementsByTagName('td'); // for diagonalWin
 const firstVertical = document.getElementsByClassName('1'); // for verticalWin
 const secondVertical = document.getElementsByClassName('2'); // for verticalWin
 const thirdVertical = document.getElementsByClassName('3'); // for verticalWin
 
+// Interaction with DOM on click and checks for winner
 const displayClick = function () {
-  const clickedBox = this.getAttribute('id'); // finds id
+  const clickedBox = this.getAttribute('id'); // finds id of clicked box
   const selectedId = `#${clickedBox}`;
+  // Sets players turn and associated icon
   if (firstPlayer == 1 ) {
     $(selectedId).text('X');
     firstPlayer = 0;
@@ -21,11 +22,14 @@ const displayClick = function () {
       firstPlayer = 1;
     };
 
+  // connects logic for different win functions
   let horizontal = horizontalWin();
   let vertical = verticalWin();
   let diagonal = diagonalWin();
 
-  // check for winner
+  // Check for winner through win functions
+  // Display winning message on DOM
+  // Increases score board on DOM by 1 for winner
   if (horizontal) {
     $('#winner').text(horizontalWin());
     if (horizontal === winnerX) {
@@ -51,6 +55,9 @@ const displayClick = function () {
   };
 };
 
+// Loops through grid rows 'tr'
+// Identifies if winning combo displayed through innerText
+// If true returns winner
 const horizontalWin = function () {
   for (let i = 0; i < row.length; i++) {
     let rowGroup = row[i];
@@ -63,6 +70,9 @@ const horizontalWin = function () {
   return false;
 };
 
+// Created three arrays of vertical columns by class name 1, 2 & 3
+// Checked each index in array had strict equality to X or O respectively
+// If true returns winner
 const verticalWin = function () {
     if (firstVertical[0].innerText === 'X' && firstVertical[1].innerText === 'X' && firstVertical[2].innerText === 'X') {
       return winnerX;
@@ -81,6 +91,10 @@ const verticalWin = function () {
     };
   };
 
+// Created array of table boxes 'td'
+// Identified two winning combinations for diagonal win and associated index
+// Checked index had strict equality to X or O respectively
+// If true returns winner
 const diagonalWin = function () {
   if (box[0].innerText === 'X' && box[4].innerText === 'X' && box[8].innerText === 'X') {
     return winnerX;
