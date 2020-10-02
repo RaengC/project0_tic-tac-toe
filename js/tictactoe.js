@@ -3,14 +3,15 @@ let winsX = 1;
 let winsO = 1;
 const winnerX = 'The Winner is X';
 const winnerO = 'The Winner is O';
+const drawMsg = 'Draw - play again!'
 const row = document.getElementsByTagName('tr'); // for horizontalWin
 const box = document.getElementsByTagName('td'); // for diagonalWin
-const firstVertical = document.getElementsByClassName("1"); // for verticalWin
+const firstVertical = document.getElementsByClassName('1'); // for verticalWin
 const secondVertical = document.getElementsByClassName('2'); // for verticalWin
 const thirdVertical = document.getElementsByClassName('3'); // for verticalWin
 
 const displayClick = function () {
-  const clickedBox = this.getAttribute("id"); // finds id
+  const clickedBox = this.getAttribute('id'); // finds id
   const selectedId = `#${clickedBox}`;
   if (firstPlayer == 1 ) {
     $(selectedId).text('X');
