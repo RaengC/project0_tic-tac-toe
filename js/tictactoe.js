@@ -3,8 +3,10 @@ let winsX = 1;
 let winsO = 1;
 const winnerX = 'The Winner is X';
 const winnerO = 'The Winner is O';
+const draw = "It's a draw! Try again."
 const row = document.getElementsByTagName('tr'); // for horizontalWin
 const box = document.getElementsByTagName('td'); // for diagonalWin
+console.log(box)
 const firstVertical = document.getElementsByClassName('1'); // for verticalWin
 const secondVertical = document.getElementsByClassName('2'); // for verticalWin
 const thirdVertical = document.getElementsByClassName('3'); // for verticalWin
@@ -26,6 +28,7 @@ const displayClick = function () {
   let horizontal = horizontalWin();
   let vertical = verticalWin();
   let diagonal = diagonalWin();
+  let noWinner = checkDraw();
 
   // Check for winner through win functions
   // Display winning message on DOM
@@ -51,6 +54,23 @@ const displayClick = function () {
     } else {
       $('#winsO').text(winsO++);
     };
+  } else if (draw) {
+    $('#winner').text(checkDraw())
+  } else {
+  };
+};
+
+// Check for draw
+// Checks each array in box for X or O
+// If true return draw
+// maybe use !== ???? not sure on this iwth current set up.. 
+const checkDraw = function () {
+  if (box[0].innerText === 'X' || box[0].innerText === 'O' && box[1].innerText === 'X' || box[1].innerText === 'O'
+  && box[2].innerText === 'X' || box[2].innerText === 'O' && box[3].innerText === 'X' || box[3].innerText === 'O'
+  && box[4].innerText === 'X' || box[4].innerText === 'O' && box[5].innerText === 'X' || box[5].innerText === 'O'
+  && box[6].innerText === 'X' || box[6].innerText === 'O' && box[7].innerText === 'X' || box[7].innerText === 'O'
+  && box[8].innerText === 'X' || box[8].innerText === 'O') {
+    return draw;
   } else {
   };
 };
