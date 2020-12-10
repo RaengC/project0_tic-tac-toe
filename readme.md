@@ -1,11 +1,17 @@
 # Tic-Tac-Toe
 
 ## Summary
-Class project to create tic-tac-toe game with JavaScript, html and css. Requirements for a two player game with winner getting three X or O in a row, horizontal, vertical or diagonal, with visual display of winner.
+Class project to create tic-tac-toe game with JavaScript, html and css.
+Requirements for a two player game with winner getting three X or O in a row, horizontal, vertical or diagonal, with visual display of winner.
+
+![First Board](images/tictactoe-1.jpg)
 
 Two boards created with exploration of css capacity being main goal of second board.
 
 [Click here for Live Game Link](https://raengc.github.io/project0_tic-tac-toe/)
+
+![Second Board](images/tictactoe-2.png)
+
 
 ## User Stories with associated Technical Tasks
 [Trello Board, with associated **To Do, Doing, Done** list.](https://trello.com/b/dst9Evfb/project0tic-tac-toe)
